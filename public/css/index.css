@@ -103,6 +103,7 @@
 .about h2 {
     text-align: center;
     padding: 40px;
+    margin-top: 150px;
 
 }
 
@@ -184,7 +185,7 @@
     stroke-width: 1;
 }
 
-.emoji {
+.edu .emoji {
     font-size: 10px;
 }
 
@@ -414,7 +415,8 @@ h3 {
     left: 0px;
     right: 0px;
     top: 0px;
-    color: #fff;
+    color: black;
+    font-size: 20px;
     bottom: 0px;
     background-color: rgb(203, 196, 240);
     display: flex;
@@ -619,5 +621,266 @@ form input:focus , textarea:focus {
 
     to {
         width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    /* Stack the menu vertically */
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 25px;
+    }
+
+    /* Hide menu items initially */
+    .menulist {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Show menu items on hover or toggle */
+    .menu:hover .menulist, .menu:focus-within .menulist {
+        display: flex;
+    }
+
+    /* Menu items styling for mobile */
+    .menu ul li {
+        padding: 5px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    /* Adjust name styling */
+    .name {
+        margin: 0px auto;
+        font-size: 1.5em;
+    }
+    .text img{
+        height: 100%;
+        object-fit:cover;
+        width: 100vw;
+    }
+    .text h2{
+        font-size: 45px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+    .about h2{
+       margin-top: 60px;
+       padding: 20px;
+    }
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust text section */
+    .about-hero .para {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .about-hero .para h4 {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    /* Adjust image section */
+    .about-hero .pic {
+        width: 90%;
+        margin: 20px 0 0;
+        max-height: 300px; /* Limit height for mobile */
+    }
+
+    .about-hero .pic img {
+        width: 100%;
+        height: auto;
+        margin-left: 0; /* Center the image */
+    }
+
+    /* Adjust footer styling */
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer a {
+        font-size: 14px; /* Adjust font size */
+        margin-bottom: 10px; /* Add space between links */
+    }
+    .education{
+        padding: 20px;
+    }
+    .edu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    /* Adjust each edu-hero section */
+    .edu-hero {
+        width: 100%;
+        margin-bottom: 20px; /* Space between each item */
+    }
+
+    /* Adjust font size for year and description */
+    .year {
+        font-size: 16px; /* Smaller font for mobile */
+    }
+
+    .des {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+
+    /* Adjust emoji and line */
+    .edu .emoji {
+        font-size: 12px; /* Slightly larger emoji for visibility */
+    }
+
+    .line {
+        stroke-width: 1;
+        width: 100%; /* Line spans full width on mobile */
+    }
+
+    /* Adjust padding and alignment for SVG */
+    svg {
+        width: 100%;
+        height: auto;
+    }
+    .skill{
+        padding: 20px;
+    }
+    .skill-hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .progress {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .progress .progress-container {
+        height: 12px;
+    }
+
+    .progress-hero {
+        font-size: 12px;
+        height: 12px;
+    }
+    .exp {
+        padding: 20px;
+    }
+
+    .exp-cont {
+        margin-bottom: 40px;
+    }
+
+    .expp {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .expp .exp-cont1,
+    .expp .exp-cont2 {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .emoj {
+        width: auto;
+        margin: 10px auto;
+    }
+
+    .vertical-line {
+        height: 100px;
+        margin: 0 auto;
+    }
+    .profii, .profii2 {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .prof-cont {
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid black; /* Border on all sides for each profile item */
+    }
+    .profii :first-child{
+        border-left: 1px solid black;
+    }
+    .profii :last-child{
+        border-right: 1px solid black;
+    }
+    .profii2 :first-child {
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .profii2 .prof-cont:nth-child(2),
+    .profii2 .prof-cont:nth-child(3) {
+        border-bottom: 1px solid black;
+    }
+    .profii2 :last-child {
+        border-right: 1px solid black;
+    }
+    .profii2 .prof-cont:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .prof-cont:hover {
+        background-color: blueviolet;
+        color: white;
+    }
+    .portfolio {
+        padding: 20px;
+        text-align: center;
+    }
+    .porti {
+        padding-top: 20px; /* Reduce top padding */
+        padding-bottom: 20px; /* Reduce bottom padding */
+    }
+
+    .porti1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+
+    .port {
+        margin-bottom: 20px;
+        height: 100%; /* Increase the height for images */
+    }
+
+    .port img {
+        object-fit: cover; /* Ensure images cover the container */
+        height: 150px; /* Make sure the images stretch to fill the container */
+    }
+    .tall img {
+        height: 100%; /* Span the tall image across 2 rows */
+    }
+    .layover {
+        font-size: 14px;
+    }
+    .conct h2 {
+        padding: 20px;
+    }
+    .contact {
+        flex-direction: column; /* Stack form and details vertically */
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    .contact1 {
+        margin-right: 0;
+        width: 100%;
+    }
+    .contact1 input, .contact1 textarea, .contact1 button, .contact1 .subject {
+        width: 100%; /* Make input fields and button take full width */
+        margin-left: 0;
+    }
+    .contact1 button {
+        width: 100%;
     }
 }
