@@ -663,6 +663,7 @@ form input:focus , textarea:focus {
     }
     .text p{
         font-size: 20px;
+        font-weight: 500;
     }
     .about h2{
        margin-top: 60px;
@@ -797,6 +798,10 @@ form input:focus , textarea:focus {
         height: 100px;
         margin: 0 auto;
     }
+    .profile {
+        text-align: center;
+        padding: 20px;
+    }
     .profii, .profii2 {
         flex-direction: column;
         width: 100%;
@@ -876,10 +881,12 @@ form input:focus , textarea:focus {
         width: 100%;
     }
     .contact1 input, .contact1 textarea, .contact1 button, .contact1 .subject {
-        width: 100%; /* Make input fields and button take full width */
+        width: 80%; 
         margin-left: 0;
     }
     .contact1 button {
-        width: 100%;
+        width: 60%;
+        text-align: center;
+        align-items: center;
     }
 }
